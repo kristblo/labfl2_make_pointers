@@ -1,4 +1,4 @@
-#include "../inc/motordriver.h"
+#include "motordriver.h"
 
 
 uint8_t motor_get_id(motor_t* aMotor)
