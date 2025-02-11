@@ -1,5 +1,5 @@
-#ifndef MOTORDRIVER_H
-#define MOTORDRIVER_H
+#ifndef __MOTORDRIVER_H
+#define __MOTORDRIVER_H
 #include <stdint.h>
 
 typedef struct motor{
@@ -21,4 +21,4 @@ int16_t motor_get_power(motor_t* aMotor);
 void motor_set_voltage(motor_t* aMotor, int16_t aVoltage);
 
 
-#endif //MOTORDRIVER_H
+#endif //__MOTORDRIVER_H
