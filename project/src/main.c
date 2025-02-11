@@ -70,7 +70,7 @@ int main(int argc, char* argv[])
     //Kan iterere gjennom lista, og bruke det faktum at strenger er NULL-terminerte for aa avbryte loopen
     printf("Som liste: ");
     //currentChar er en peker til en char som settes til addressa til tekststreng, som altsaa er en H
-    char* currentChar = &tekststreng;
+    char* currentChar = &tekststreng[0];
     //Loopen kjoerer saa lenge den derefererte verdien til currentChar ikke er NULL (NULL=0x00)
     //I forrige forelesning sa vi at while brukes naar vi ikke vet hvor mange iterasjoner
     //loopen skal kjoere, og dette er et godt eksempel paa det.

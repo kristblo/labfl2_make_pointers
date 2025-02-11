@@ -9,7 +9,7 @@ BUILD_DIR := build
 
 CC := gcc
 CFLAGS := -Wall -Werror -Wpedantic #skrur paa alle advarsler; eleverer advarsler til feil; skrur paa enda flere feil (ISO C)
-CFLAGS += -Wno-unused-variable -Wno-incompatible-pointer-types #skrur av kategorien "unused variable"
+CFLAGS += -Wno-unused-variable  #skrur av kategorien "unused variable"
 CFLAGS += $(addprefix -I , $(INCLUDE_DIR)) #forteller kompilatoren at inc skal inkluderes
 CFLAGS += -O3 #skrur paa hoeyeste mulige nivaa av optimalisering
 
