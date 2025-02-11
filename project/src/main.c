@@ -9,7 +9,6 @@
 int main(int argc, char* argv[])
 {
 
-    int i = 23;
 
     return 0;
 }
