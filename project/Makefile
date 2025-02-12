@@ -15,7 +15,8 @@ BUILD_DIR := build
 
 #Continue by specifying which compiler (CC) and which flags (CFLAGS) to use
 CC := gcc
-CFLAGS := -Wall
+CFLAGS := -Wall -Werror
+CFLAGS += -Wno-unused-variable -Wno-incompatible-pointer-types
 CFLAGS += $(addprefix -I , $(INCLUDE_DIR)) #Header files only need to be included per directory
 
 

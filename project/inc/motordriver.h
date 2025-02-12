@@ -7,6 +7,7 @@ typedef struct motor{
     int16_t max_voltage;
     int16_t current_voltage;
     int16_t current_power;
+    int16_t power_constant;
 } motor_t;
 
 
@@ -19,6 +20,8 @@ int16_t motor_get_voltage(motor_t* aMotor);
 int16_t motor_get_power(motor_t* aMotor);
 
 void motor_set_voltage(motor_t* aMotor, int16_t aVoltage);
+
+void motor_update_power(motor_t* aMotor);
 
 
 #endif //__MOTORDRIVER_H

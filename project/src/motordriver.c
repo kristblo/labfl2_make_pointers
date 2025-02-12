@@ -25,3 +25,9 @@ void motor_set_voltage(motor_t* aMotor, int16_t aVoltage)
 {
     aMotor->current_voltage = aVoltage;
 }
+
+void motor_update_power(motor_t* aMotor)
+{
+    int16_t power = aMotor->current_voltage * aMotor->power_constant;
+    aMotor->current_power = power;
+}
