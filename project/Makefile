@@ -17,7 +17,7 @@ BUILD_DIR := build
 CC := gcc
 CFLAGS := -Wall -Werror
 CFLAGS += -Wno-unused-variable -Wno-incompatible-pointer-types
-CFLAGS += $(addprefix -I , $(INCLUDE_DIR)) #Header files only need to be included per directory
+CFLAGS += -I $(INCLUDE_DIR) #Header files only need to be included per directory
 
 
 #Create a list of object files, one per c file.
