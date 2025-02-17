@@ -16,7 +16,7 @@ BUILD_DIR := build
 #Continue by specifying which compiler (CC) and which flags (CFLAGS) to use
 CC := gcc
 CFLAGS := -Wall
-CFLAGS += $(addprefix -I , $(INCLUDE_DIR)) #Header files only need to be included per directory
+CFLAGS += -I $(INCLUDE_DIR) #Header files only need to be included per directory
 
 
 #Create a list of object files, one per c file.
